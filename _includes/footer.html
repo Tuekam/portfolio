@@ -1,0 +1,30 @@
+<!-- _includes/footer.html -->
+<footer class="py-10 sm:py-14 border-t border-[var(--border-color,#E4E1D8)] bg-[var(--bg-body,#F7F5F1)] transition-colors duration-300">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row flex-wrap justify-between items-center gap-4 sm:gap-5">
+
+    <!-- Logo -->
+    <a href="{{ '/' | relative_url }}" class="font-heading font-bold text-base sm:text-lg flex items-center gap-2">
+      <span class="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-sm bg-[var(--indigo,#4F46E5)] rotate-12 inline-block"></span>
+      {{ site.author | default: "votrenom" }}<span class="mono text-[var(--indigo-deep,#3730A3)]">.dev</span>
+    </a>
+
+    <!-- Liens sociaux -->
+    <div class="footer-links flex flex-wrap justify-center gap-4 sm:gap-6 text-xs sm:text-sm text-[var(--text-secondary,#5A5870)]">
+      <a href="{{ #| default: '#' }}" target="_blank" rel="noopener" class="hover:text-[var(--text-primary,#1C1B29)] transition">
+        <i class="fab fa-github mr-1"></i>GitHub
+      </a>
+      <a href="{{ # | default: '#' }}" target="_blank" rel="noopener" class="hover:text-[var(--text-primary,#1C1B29)] transition">
+        <i class="fab fa-linkedin mr-1"></i>LinkedIn
+      </a>
+      <a href="{{ # | default: '#' }}" target="_blank" rel="noopener" class="hover:text-[var(--text-primary,#1C1B29)] transition">
+        <i class="fab fa-facebook mr-1"></i>Facebook
+      </a>
+    </div>
+
+    <!-- Copyright -->
+    <span class="footer-copy text-xs sm:text-sm text-[var(--text-secondary,#5A5870)]">
+      © {{ 'now' | date: "%Y" }} — Tous droits réservés
+    </span>
+
+  </div>
+</footer>

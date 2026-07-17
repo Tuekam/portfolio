@@ -1,0 +1,33 @@
+# _config.yml
+# Configuration du site
+title: "Mon Portfolio"
+description: "Portfolio de développeur Full-Stack"
+author: "Tuekam Jules"
+email: "tuekam100@gmail.com"
+phone: "237699724329"
+whatsapp: "237699724329"
+location: "Yaounde, Cameroun"
+url: "http://localhost:4000"
+baseurl: ""
+
+# Réseaux sociaux
+github: "https://github.com/votrenom"
+linkedin: "https://linkedin.com/in/votrenom"
+twitter: "https://twitter.com/votrenom"
+youtube: "https://youtube.com/@votrenom"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:title/
+
+# Exclusions
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - README.md
+  - .gitignore
+  - .sass-cache
+  - .jekyll-cache
+  - .vscode
